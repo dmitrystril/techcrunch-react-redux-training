@@ -1,0 +1,50 @@
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: normal;
+	src: url("./font/OpenSansNormal.woff") format("woff");
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: bold;
+	src: url("./font/OpenSansBold.woff") format("woff");
+}
+
+.header {
+	text-align:center;
+	width:100%;
+	font: 100%/1.625 "Open Sans",HelveticaNeue,Helvetica,Arial,sans-serif;
+	font-size: 1.75em;
+	font-weight: 700;
+	color: #3e433e;
+	line-height: 2.7;
+}
+
+.header a {
+	color: #089E00;
+	text-decoration: none;
+}
+
+.header a:hover {
+	color: black;
+}
+
+.poweredBy {
+	text-align:center;
+	width:100%;
+	font: 100%/1.625 "Open Sans",HelveticaNeue,Helvetica,Arial,sans-serif;
+    font-weight: normal;
+    font-size: .75em;
+	color: #3e433e;
+}
+
+.poweredBy a {
+	color: #089E00;
+	text-decoration: none;
+}
+
+.poweredBy a:hover {
+	color: black;
+}

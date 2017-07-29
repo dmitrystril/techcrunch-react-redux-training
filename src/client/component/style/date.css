@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "alright_sansmediumitalic";
+  font-style: italic;
+  font-weight: normal;
+  src: url("./font/SansMediumItalicNormal.woff") format("woff");
+}
+
+.date {
+	font-family: alright_sansmediumitalic,HelveticaNeue,Helvetica,Arial,sans-serif;
+	font-size: .75em;
+  font-style: italic;
+  width: 8.5em;
+  padding: .6em .55em;
+  background: #e8e8e8;
+  vertical-align:middle;
+  color: #3e433e;
+  text-align: center;
+  line-height: 1.3;
+}
