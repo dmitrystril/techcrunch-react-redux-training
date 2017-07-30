@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './style/author.css';
+import styles from './style/author.css'
 
 export default class ArticleAuthor extends Component {
     render() {

@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './style/image.css';
+import styles from './style/image.css'
 
 export default class ArticleImage extends Component {
     render() {

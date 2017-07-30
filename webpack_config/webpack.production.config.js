@@ -4,7 +4,7 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
 export default new Config().extend('webpack_config/webpack.base.config.js').merge({
   entry: [
-    'whatwg-fetch'
+    'whatwg-fetch',
     __dirname + '/../src/client/Client.jsx'
   ],
   output: {

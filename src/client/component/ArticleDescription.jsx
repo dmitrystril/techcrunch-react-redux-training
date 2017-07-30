@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './style/description.css';
+import styles from './style/description.css'
 
 export default class ArticleDescription extends Component {
     render() {
