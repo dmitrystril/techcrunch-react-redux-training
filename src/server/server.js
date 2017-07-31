@@ -1,4 +1,3 @@
-var webpackConfig = require('../../webpack.config');
 var express = require('express');
 var path = require('path');
 
