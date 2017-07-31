@@ -8,7 +8,7 @@ app.get('*', function (request, response){
     response.sendFile(path.resolve('./', 'public', 'index.html'))
 })
 
-var port = 3000;
+var port = process.env.PORT || 3000;
 app.listen(port, function(error) {
 	if (error) {
 		return console.log(error);
