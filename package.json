@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "webpack && babel-node ./src/server/server.js"
+    "start": "babel-node ./src/server/server.js"
   },
   "author": "Dmitry Stril",
   "license": "ISC",
