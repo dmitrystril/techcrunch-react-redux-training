@@ -3,7 +3,7 @@ const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-export default new Config().merge({
+module.exports = {
   entry: [
   'whatwg-fetch',
     './src/client/Client.jsx'
@@ -49,4 +49,4 @@ export default new Config().merge({
     }),
     new ExtractTextPlugin("bundle.css")
   ]
-});
+};
