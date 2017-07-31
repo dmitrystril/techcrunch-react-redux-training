@@ -4,9 +4,7 @@
   "description": "A simple react+redux app showing latest news headlines from TechCrunch.com",
   "main": "index.js",
   "scripts": {
-    "build-dev": "set NODE_ENV=development&& webpack && babel-node ./src/server/server.js",
-    "build-prod": "set NODE_ENV=production&& webpack && babel-node ./src/server/server.js",
-    "build-dev-noserver": "set NODE_ENV=development&& webpack"
+    "start": "set NODE_ENV=production&& webpack && babel-node ./src/server/server.js"
   },
   "author": "Dmitry Stril",
   "license": "ISC",
