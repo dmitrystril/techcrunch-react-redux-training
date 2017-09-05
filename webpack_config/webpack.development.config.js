@@ -2,7 +2,7 @@ import webpack from 'webpack'
 import Config from 'webpack-config'
 import combineLoaders from 'webpack-combine-loaders'
 
-new Config().extend('webpack_config/webpack.base.config.js').merge({
+export default new Config().extend('webpack_config/webpack.base.config.js').merge({
   devtool: 'inline-source-map',
   entry: [
     'webpack-hot-middleware/client',

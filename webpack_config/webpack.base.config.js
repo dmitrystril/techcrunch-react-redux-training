@@ -1,7 +1,7 @@
 import Config from 'webpack-config';
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-new Config().merge({
+export default new Config().merge({
   entry: './src/client/Client.jsx',
   output: {
     path: __dirname + '/../public',
