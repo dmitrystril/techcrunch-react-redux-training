@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import ArticleTitle from './ArticleTitle.jsx'
 import ArticleAuthor from './ArticleAuthor.jsx'
@@ -9,30 +9,28 @@ import PropTypes from 'prop-types'
 
 import styles from './style/article.css'
 
-export default class Article extends Component {
-    render() {
-        const article = this.props.data;
+const Article = ({article}) => {
+    return (
+        <li className={styles.listItem}>
+            <div className={styles.columnOne}>
+                <ArticleDate date={article.publishedAt} />
+            </div> 
 
-        return (
-            <li className={styles.listItem}>
-                <div className={styles.columnOne}>
-                    <ArticleDate date={article.publishedAt} />
-                </div> 
+            <div className={styles.columnTwo}>
+                <ArticleTitle title={article.title} url={article.url}/>
+                <ArticleAuthor author={article.author} />
+                <ArticleDescription description={article.description} url={article.url}/>
+            </div>    
 
-                <div className={styles.columnTwo}>
-                    <ArticleTitle title={article.title} url={article.url}/>
-                    <ArticleAuthor author={article.author} />
-                    <ArticleDescription description={article.description} url={article.url}/>
-                </div>    
+            <div className={styles.columnThree}>
+                <ArticleImage urlToImage={article.urlToImage} url={article.url} />
+            </div> 
+        </li>
+    );
+};
 
-                <div className={styles.columnThree}>
-                    <ArticleImage urlToImage={article.urlToImage} url={article.url} />
-                </div> 
-            </li>
-        );
-    }
-}
+export default Article;
 
 Article.propTypes = {  
-  data: PropTypes.object.isRequired
+  article: PropTypes.object.isRequired
 };

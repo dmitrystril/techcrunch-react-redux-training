@@ -1,4 +1,4 @@
-var API_KEY = 'e3c99363b2ee49a198a476be596e45a5'
+const API_KEY = 'e3c99363b2ee49a198a476be596e45a5';
 
 export default class TechcrunchService {  
     static getLatestArticles() {

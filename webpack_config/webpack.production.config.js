@@ -1,8 +1,8 @@
-import webpack from 'webpack';
-import Config from 'webpack-config';
+import webpack from 'webpack'
+import Config from 'webpack-config'
 import ExtractTextPlugin from 'extract-text-webpack-plugin'
 
-export default new Config().extend('webpack_config/webpack.base.config.js').merge({
+new Config().extend('webpack_config/webpack.base.config.js').merge({
   entry: [
     'whatwg-fetch',
     __dirname + '/../src/client/Client.jsx'
@@ -33,4 +33,3 @@ export default new Config().extend('webpack_config/webpack.base.config.js').merg
     }),
     new ExtractTextPlugin("bundle.css")]
 });
-

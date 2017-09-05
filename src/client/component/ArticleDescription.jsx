@@ -1,17 +1,17 @@
-import React, { Component } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import styles from './style/description.css'
 
-export default class ArticleDescription extends Component {
-    render() {
-        return (
-            <p className={styles.description}>
-            	{this.props.description} <a className={styles.read_more} href={this.props.url}>Read More</a>
-            </p>
-        )
-    }
-}
+const ArticleDescription = props => {
+    return (
+        <p className={styles.description}>
+            {props.description} <a className={styles.read_more} href={props.url}>Read More</a>
+        </p>
+    )
+};
+
+export default ArticleDescription;
 
 ArticleDescription.propTypes = {  
   description: PropTypes.string.isRequired,

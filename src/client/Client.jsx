@@ -7,14 +7,14 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import actions from './redux/actions'
 
-let initialState = {
+const initialState = {
   articleList: [],
   isFetching: false,
   articleListHash: ''
-}
+};
 
-let store = configureStore(initialState)
-store.dispatch(actions.fetchArticles())
+const store = configureStore(initialState);
+store.dispatch(actions.fetchArticles());
 
 ReactDOM.render(
   <Provider store={store}>  

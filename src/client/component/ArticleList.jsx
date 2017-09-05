@@ -15,8 +15,8 @@ export default class ArticleList extends Component {
     }
 
     render() {
-        var articleList = renderArticleList(this.props.articleList);
-        
+        let articleList = renderArticleList(this.props.articleList);
+
         return (
             <ul className={styles.list}>
                 {articleList}
@@ -25,17 +25,17 @@ export default class ArticleList extends Component {
     }
 }
 
-function renderArticleList(articleList) {
+const renderArticleList = articleList => {
     if (articleList && articleList.length > 0) {
         return articleList.map((listElement, index) => (
-            <Article data={listElement} key={index} />
+            <Article article={listElement} key={index} />
         ));
     } else {
         return [];
     }
-}
+};
 
-ArticleList.propTypes = {  
+ArticleList.propTypes = {
   articleList: PropTypes.array.isRequired,
   actions: PropTypes.object.isRequired
 };
